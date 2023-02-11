@@ -8,12 +8,12 @@ dotenv.config()
 
 const server = Express();
 
-server.set('view engine', 'mustache')
-server.set('views', path.join(__dirname,"views"))
-server.engine('mustache', mustache())
+server.set('view engine', 'mustache');
+server.set('views', path.join(__dirname, 'views'));
+server.engine('mustache', mustache());
 
 
-server.use(Express.static(path.join(__dirname,'..public')))
+server.use(Express.static(path.join(__dirname,'../public')))
 
 //roteas
 server.use(mainRouter)
