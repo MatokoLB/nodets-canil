@@ -19,6 +19,5 @@ export const search = (req: Request ,res: Response ) =>{
         menu: createMenuObject(''),
         list,
         query
-    })
-    
+    })   
 }
