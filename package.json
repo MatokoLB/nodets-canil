@@ -4,7 +4,7 @@
   "description": "Projeto de estudos Nodets desenvolvido junto a plataforma B7web",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon -e ts,json,mustache src/sever.ts"
+    "start": "nodemon -e ts,json,mustache src/server.ts"
   },
   "repository": {
     "type": "git",
