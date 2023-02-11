@@ -19,7 +19,7 @@ server.use(Express.static(path.join(__dirname,'../public')))
 server.use(mainRouter)
 
 server.use((req, res)=>{
-    res.send("pagina nao encontradoa!")
+    res.render('pages/404')
 } )
 
 

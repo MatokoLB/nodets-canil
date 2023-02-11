@@ -3,7 +3,7 @@ type PetType = 'dog' | 'cat' | "fish"
 
 type Pet = {
 
-    type: 'dog' | 'cat' | 'fish',
+    type: PetType
     image: string,
     name: string,
     color: string,
@@ -141,8 +141,9 @@ export const Pet = {
         return data.filter(intem => intem.type === type)
     },
     getFromName: (name: string): Pet[]=>{
-        return data.filter(item=> 
-            item.name.toLowerCase()
-            .indexOf(name.toLowerCase()))          
-        }
+        return data.filter(item=>
+            item.name.toLowerCase().indexOf(name.toLowerCase()) >-1            
+            
+        )
+    }
 }
